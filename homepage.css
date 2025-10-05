@@ -88,14 +88,14 @@ align-items: center;
      margin-bottom: 15px;
 }
 
-.featured-preview-grid {
+.preview-grid{
     display: flex;                 /* use flex for horizontal scroll */
     gap: 16px;                     /* space between cards */
     overflow-x: auto;              /* horizontal scroll */
     scrollbar-width: none;         /* hide scrollbar Firefox */
 }
 
-.featured-preview-grid::-webkit-scrollbar {
+.preview-grid::-webkit-scrollbar {
     display: none;                 /* hide scrollbar Chrome/Safari */
 }
 
