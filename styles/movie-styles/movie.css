@@ -1,0 +1,84 @@
+body{
+    font-family: roboto;
+    padding-bottom: 200px;
+}
+.movie-poster-container{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+   
+    border-radius: 30px;
+}
+
+.movie-poster{
+   width: 100%;
+      border-radius: 20px;
+    
+}
+
+
+.movie-info{
+    display: block;
+    margin-top: 30px;
+}
+
+.movie-info div{
+    display: flex;
+     margin-top: 30px;
+     align-items: start;
+}
+
+.title-text{
+font-weight: 800;
+}
+
+.title-name{
+color: brown;
+font-weight: 600;
+ margin-left: 10px;
+}
+
+.actor-text{
+    font-weight: 800;
+}
+
+.actor-name{
+    color: blue;
+    font-weight: 600;
+     margin-left: 10px;
+}
+
+
+
+
+
+.rating-text{
+    font-weight: 800;
+}
+
+.actual-rating{
+color: red;
+font-weight: 900;
+ margin-left: 10px;
+}
+
+
+.description-text{
+    font-weight: 800;
+}
+
+.movie-description{
+    margin-left: 10px;
+}
+
+
+.release-date-text{
+font-weight: 800;
+}
+
+.release-date{
+color: blue;
+font-weight: 600;
+ margin-left: 10px;
+ 
+}

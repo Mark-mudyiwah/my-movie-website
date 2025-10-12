@@ -1,0 +1,134 @@
+body{
+    padding-top: 80px;
+}
+
+.header-primary{
+background-color: rgb(46, 46, 46);
+ height: 40px;
+ display: flex;
+ align-items: center;
+ padding: 12px 4px;
+ font-family: Arial;
+ margin-bottom: 15px;
+ position: fixed;
+ right: 0;
+ left: 0;
+ top: 0;
+
+}
+
+.menu-name-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.guteflix-text{
+    font-size: 20px;
+    color: rgb(212, 212, 212);
+    font-weight: 900;
+    margin-left: 15px;
+    
+   
+}
+.search-input{
+    flex: 1;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    background-color: white;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+.search-input::placeholder{
+    color: black;
+}
+
+.menu-icon,
+.movies-icon{
+  width: 30px;
+}
+.menu-icon{
+display: none;
+}
+ 
+
+.header-secondary{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    margin:  0 auto;
+    font-weight: 800;
+    font-size: 17px;
+    
+}
+
+.header-secondary span{
+    cursor: pointer;
+}
+
+.header-secondary div{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    cursor: pointer;
+    
+}
+
+.s-header-icon{
+    width: 20px;
+}
+
+ .show{
+    display:flex;
+ }
+
+ .home-icon{
+
+    width: 30px;
+ }
+
+
+ 
+ @media (max-width: 600px) {
+ .header-secondary{
+    width: 100%;
+    font-size: 14px;
+  
+
+}
+.s-header-icon{
+    width: 18PX;
+}
+
+.menu-icon{
+    display: block;
+}
+.movies-icon{
+    display: none;
+}
+
+.search-input{
+    margin-left: 5px;
+    margin-right: 4px;
+ }
+
+
+
+
+ }
+
+   @media (max-width: 550px) {
+ .guteflix-text{
+    font-size: 18px;
+    width: 85px;
+ }
+ 
+
+ }
+
+ 

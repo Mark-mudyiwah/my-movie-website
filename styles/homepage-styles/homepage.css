@@ -1,0 +1,127 @@
+ body{
+    font-size: 15px;
+    
+    font-family: roboto;
+ }
+
+
+
+
+.featured-text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    font-weight: 800;
+}
+
+.preview-grid{
+    display: flex;                 /* use flex for horizontal scroll */
+    gap: 16px;                     /* space between cards */
+    overflow-x: auto;              /* horizontal scroll */
+    scrollbar-width: none;         /* hide scrollbar Firefox */
+}
+
+.preview-grid::-webkit-scrollbar {
+    display: none;                 /* hide scrollbar Chrome/Safari */
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    width: max-content;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);   /* base shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px) scale(1.03);   /* movement effect */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);   /* stronger shadow */
+}
+
+.movie-image-container {
+    width: 200px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.poster-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;   /* smooth rounded top edges */
+}
+
+
+ .movie-information{
+    margin: 0 auto;
+ }
+
+
+
+ .name-text,
+ .released-text,
+ .actor-text{
+    font-weight:700;
+    color: darkblue;
+ }
+
+ .see-all-text{
+    font-weight: 500;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ @media (max-width: 600px) {
+  .featured-text{
+    font-size: 17px;
+  }
+
+  
+ 
+
+
+
+
+ .movie-image-container {
+    width: 150px;
+}
+
+
+ }
+
+   
+ @media (max-width: 450px) {
+  .featured-text{
+    font-size: 16px;
+  }
+
+  
+ 
+
+
+
+
+ .movie-image-container {
+    width: 120px;
+}
+
+
+ }

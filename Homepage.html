@@ -2,17 +2,28 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="homepage.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>movie website</title>
+
+    <link rel="stylesheet" href="styles/shared-styles/nav.css">
+    <link rel="stylesheet" href="styles/shared-styles/sidebar.css ">
+    <link rel="stylesheet" href="styles/shared-styles/header.css">
+    <link rel="stylesheet" href="styles/homepage-styles/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        
 </head>
 
 <body>
 
     <div class="header-primary">
         <div class="menu-name-container">
-            <img class="menu-icon" src="images/icons/menu-icon-red.png">
+            <img class="movies-icon" src="images/icons/movies-icon.png">
+             <img class="menu-icon" src="images/icons/menu-icon-red.png">
             <span class="guteflix-text">
                 GuteFlix Movies
             </span>
@@ -23,33 +34,106 @@
     </div>
 
     <div class="header-secondary">
-        <span active>
-            Home
-        </span>
-        <span>
-            Browse
-        </span>
-        <span>
-            TV Shows
-        </span>
-        <span>
-            Popular
-        </span>
-        <span>
-            Top Rated
-        </span>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/home-icon.png" alt="home">
+            </span>
+            <span>
+                Home
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/browse-icon.png" alt="browse">
+            </span>
+            <span>
+                Browse
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/tv-show-icon.png" alt="tv-show">
+            </span>
+            <span>
+              Tv Shows
+            </span>
+
+        </div>
+        <div>
+             <span>
+                <img class="s-header-icon" src="images/icons/popular-icon.png" alt="popular">
+            </span>
+            <span>
+             Popular
+            </span>
+        </div>
+        <div>
+          <span>
+                <img class="s-header-icon" src="images/icons/top-rated-icon.png" alt="top-rated">
+            </span>
+            <span>
+             Top Rated
+
+            </span>
+        </div>
     </div>
 
     <div class="sidebar">
-        <div>Sign Up</div>
-        <div>Movies</div>
-        <div>Genres</div>
-        <div>Tv Shows</div>
-        <div>About</div>
+             <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/home-icon.png" alt="home">
+            </span>
+            <span>
+                Home
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/browse-icon.png" alt="browse">
+            </span>
+            <span>
+                Browse
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/tv-show-icon.png" alt="tv-show">
+            </span>
+            <span>
+              Tv Shows
+            </span>
+
+        </div>
+        <div>
+             <span>
+                <img class="s-header-icon" src="images/icons/popular-icon.png" alt="popular">
+            </span>
+            <span>
+             Popular
+            </span>
+        </div>
+        <div>
+          <span>
+                <img class="s-header-icon" src="images/icons/top-rated-icon.png" alt="top-rated">
+            </span>
+            <span>
+             Top Rated
+
+            </span>
+        </div>
     </div>
 
     <div class="featured-text">
-        Featured
+        <span>
+            Featured
+        </span>
+        <span class="see-all-text">
+            See All &gt
+        </span>
     </div>
 
     <div class="preview-grid">
@@ -61,17 +145,10 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
                     <span>Colombiana</span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>February 2018</span>
-
-                </div>
-
-
+                
 
             </div>
         </div>
@@ -83,14 +160,8 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
+                   
                     <span>Accident Man</span>
-                </div>
-
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>September 2020</span>
-
                 </div>
 
             </div>
@@ -103,14 +174,23 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
+                   
                     <span>John Wick </span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>September 2020</span>
+                
 
+            </div>
+        </div>
+
+          <div class=movie-card>
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/terminal-list.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                    <span>The Terminal List</span>
                 </div>
 
             </div>
@@ -118,7 +198,12 @@
     </div>
 
     <div class="featured-text">
-        Trending&#x1F525
+        <span>
+             Trending
+        </span>
+        <span class="see-all-text">
+          See All &gt
+        </span>
     </div>
 
     <div class="preview-grid">
@@ -130,16 +215,11 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
+                
                     <span>Taken 2</span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>July 2020</span>
-
-                </div>
-
+                 
             </div>
         </div>
 
@@ -150,16 +230,11 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
+                  
                     <span> Ip Man 4</span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>September 2021</span>
-
-                </div>
-
+              
             </div>
         </div>
 
@@ -170,16 +245,25 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
+             
                     <span>Fast and Furious</span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>September 2020</span>
+                 
+            </div>
+        </div>
 
+        
+        <div class=movie-card>
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/stranger-things.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                         <span>Stranger Things</span>
                 </div>
-
+ 
             </div>
         </div>
 
@@ -187,7 +271,12 @@
     </div>
 
     <div class="featured-text">
-        Tv Shows📺
+       <span>
+            Tv Shows
+        </span>
+        <span class="see-all-text">
+            See All &gt
+        </span>
     </div>
     <div class="preview-grid">
 
@@ -198,16 +287,11 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
+                    
                     <span>Wednesday</span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>September 2025</span>
-
-                </div>
-
+              
 
 
             </div>
@@ -221,16 +305,9 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
-                    <span>Stranger Things</span>
+                         <span>Stranger Things</span>
                 </div>
-
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>July 2022</span>
-
-                </div>
-
+ 
             </div>
         </div>
 
@@ -241,22 +318,59 @@
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span class="name-text">Name:</span>
                     <span>The Terminal List</span>
                 </div>
 
-                <div class="release-time">
-                    <span class="released-text">Released:</span>
-                    <span>September 2020</span>
+            </div>
+        </div>
 
+           <div class=movie-card>
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/taken-2.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                
+                    <span>Taken 2</span>
                 </div>
 
+                 
             </div>
         </div>
     </div>
 
 
+             <div   class="footer">
 
+                <span   class="nav-images-container">
+                    <span><img   class="nav-image" src="images/icons/tv-show-icon.png" /></span>
+                    <span><img   class="nav-image" src="images/icons/movies-icon.png" /></span>
+
+                </span>
+                <span   class="general-info-heading">General Info</span>
+                <div   class="general-info-container">
+
+                     <div>Sign In</div>
+                    <div>About Us</div>
+                    <div>Terms of Service</div>
+                    <div>Privacy</div>
+
+                </div>
+                <span   class="follow-us-heading">Follow Us</span>
+                <div   class="follow-us">
+                    <div>Facebook</div>
+                    <div>Instagram</div>
+                    <div>Twitter</div>
+
+                </div>
+
+              <p>
+  <a href="https://github.com/Mark-mudyiwah">&#169; 2025, markmudyiwah.dev</a>
+  </p>
+
+    </div>
+        
 </body>
 
 </html>
