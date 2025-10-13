@@ -6,7 +6,7 @@
     height: max-content;
     padding: 8px 6px;
     border-radius: 3px;
-    background-color:rgb(32, 31, 31);
+    background-color:black;
     color: white;
     position: relative;
     margin-bottom: 50px;
@@ -51,7 +51,7 @@
 }
 
 .footer div div:hover{
-    background-color: rgb(6, 54, 54);
+    background-color: aqua;
     padding: 4px 8px;
 }
 

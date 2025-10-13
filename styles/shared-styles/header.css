@@ -3,7 +3,7 @@ body{
 }
 
 .header-primary{
-background-color: rgb(46, 46, 46);
+background-color: black;
  height: 40px;
  display: flex;
  align-items: center;
@@ -14,7 +14,7 @@ background-color: rgb(46, 46, 46);
  right: 0;
  left: 0;
  top: 0;
-
+z-index: 120;
 }
 
 .menu-name-container{
@@ -31,10 +31,26 @@ align-items: center;
     
    
 }
+
+.search-input-div{
+  border: 1px solid black;
+    height: 38px;
+    display: flex;
+    border-radius: 12px;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 6px;
+    align-items: center;
+    display: none;
+    
+}
+
+ 
+
 .search-input{
     flex: 1;
     height: 90%;
-    border: 1px solid black;
+    border: none;
     border-radius: 6px;
     outline: none;
     background-color: white;
@@ -43,6 +59,12 @@ align-items: center;
 }
 .search-input::placeholder{
     color: black;
+    padding-left: 40px;
+   
+}
+
+.search-icon{
+    height: 20px;
 }
 
 .menu-icon,
@@ -105,13 +127,8 @@ display: none;
     width: 18PX;
 }
 
-.menu-icon{
-    display: block;
-}
-.movies-icon{
-    display: none;
-}
 
+ 
 .search-input{
     margin-left: 5px;
     margin-right: 4px;
@@ -122,13 +139,49 @@ display: none;
 
  }
 
-   @media (max-width: 550px) {
- .guteflix-text{
-    font-size: 18px;
-    width: 85px;
- }
- 
+   @media (max-width: 500px) {
+
+
 
  }
 
- 
+ @media (max-width : 450px){
+    .header-secondary{
+        display: none;
+    }
+
+    .search-input-div{
+        display: flex;
+    }
+
+    
+ .menu-icon{
+    display: block;
+}
+.movies-icon{
+    display: none;
+}
+
+.h-search-input{
+    display: none;
+}
+
+.guteflix-text{
+    font-size: 30px;
+    margin-left: 40px;
+   
+    
+   
+}
+}
+
+@media (max-width : 350px){
+
+    .guteflix-text{
+    font-size: 25px;
+    margin-left: 40px;
+   
+    
+   
+}
+}
