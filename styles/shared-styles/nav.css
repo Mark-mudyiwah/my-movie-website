@@ -6,7 +6,7 @@
     height: max-content;
     padding: 8px 6px;
     border-radius: 3px;
-    background-color:black;
+  background:  linear-gradient( 45deg,aqua,black, blue,rgb(18, 197, 18));
     color: white;
     position: relative;
     margin-bottom: 50px;

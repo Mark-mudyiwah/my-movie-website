@@ -9,91 +9,125 @@
     <link rel="stylesheet" href="styles/shared-styles/header.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    
     <div class="header-primary">
         <div class="menu-name-container">
+            <img class="movies-icon" src="images/icons/movies-icon.png">
             <img class="menu-icon" src="images/icons/menu-icon-red.png">
             <span class="guteflix-text">
                 GuteFlix Movies
             </span>
         </div>
 
-        <input class="search-input" type="text" placeholder="Type the movie name">
+        <input class="search-input h-search-input" type="text" placeholder="Type the movie name">
+
+    </div>
+
+    <div class="search-input-div">
+        <img src="images/icons/search-icon.png" class="search-icon" alt="search">
+        <input type="text" class="search-input" placeholder="Type the movie name">
+
+    </div>
+
+    <div class="page-nav-container">
+        <span>
+            Home
+        </span>
+        <span>
+            <img class="right-arrow-icon" src="images/icons/right-arrow.png">
+        </span>
+        <span>
+            Details
+        </span>
 
     </div>
 
 
-    <div class="movie-container">
-
-        <div class="movie-poster-container">
-
-            <img class="movie-poster" src="images/movie-posters/wednesday.jpg">
+    <div class="all-movie-info-container">
+        <div class="image-container">
+            <img class="movie-poster-img" src="images/movie-posters/john-wick.jpg">
 
         </div>
 
-        <div class=" movie-info">
-            <div class="title-container">
-                <span class="title-text">
-                    Title:
-                </span>
-                <span class="title-name">
-                  Wednesday
-                </span>
-            </div>
-            <div class="actor-container">
-                  <span class="actor-text">
-                    Actor(s):
-                </span>
-                <span class="actor-name">
-                  Alfred Gough, Miles Millar
-                </span>
-            </div>
-             <div class="rating-container">
-                <span class="rating-text">Rating:</span>
-                <span class="actual-rating">9.0</span>
+        <div class="movie-info">
+            <div class="info-item">
+                <span class="label">Title:</span>
+                <span class="value">John Wick: Chapter 4</span>
             </div>
 
-          
-            <div class="description-container"> 
-                  <span class="description-text">
-                    Description:
-                </span>
-                <span class="movie-description">
-                Wednesday Addams, a sharp and morbid teenager with psychic abilities,
-                is sent to Nevermore Academy — a peculiar boarding school full of secrets.
-                As she navigates friendships, rivals, and her own dark powers,
-                 she becomes entangled in a series of supernatural mysteries surrounding the school and her family’s past.
-                </span>
-            </div>
-                <div class="release-date-container">
-                  <span class="release-date-text">
-                    Release Date:
-                </span>
-                <span class="release-date">
-                2022–present
-                </span>
+            <div class="info-item">
+                <span class="label">Actors:</span>
+                <span class="value">Keanu Reeves, Donnie Yen</span>
             </div>
 
-            <div class="release-date-container">
-                  <span class="release-date-text">
-                    Genre:
-                </span>
-                <span class="release-date">
-                 Comedy, Crime, Fantasy, Mystery
-                </span>
+            <div class="info-item">
+                <span class="label">Release:</span>
+                <span class="value">2023</span>
             </div>
-          
+
+            <div class="info-item">
+
+                <span class="label">Overview:</span>
+                <p class="movie-desc">
+                    After being betrayed by the High Table,
+                    legendary hitman John Wick uncovers a path to defeating the secretive criminal council once and
+                    for all...see more
+
+
+                </p>
+            </div>
+            <div class="info-item">
+                <span class="label">Release:</span>
+                <span class="value">March ,2023</span>
+            </div>
+
+            <div class="info-item">
+                <span class="label">Ratings:</span>
+                <span class="value">4.5</span>
+            </div>
+
+
+            <div class="info-item">
+
+                <button class="watch-trailer-button">
+                    <img class="watch-icon" src="images/icons/watch-video-icon.png" alt="Watch">
+                    Watch Trailer</button>
+                <button class="return-button">
+                    <img class="return-icon" src="images/icons/return-icon.png" alt="Watch">
+                    Go Back
+                </button>
+
+
+
+
+
+
+            </div>
+
+
 
         </div>
-        <div>
+        <div class="left-movie-side">
+
+            <div class="similar-movie-container">
+
+
+
+
+            </div>
+            <div class="Users-coments-container">
+
+            </div>
 
         </div>
+
+
         <div>
 
 
@@ -101,6 +135,68 @@
         </div>
 
     </div>
+
+
+    <div>
+
+    </div>
+
+    <span class="more-like-this-text">
+        <span>More Like This</span>
+    </span>
+
+    <div class="similar-movies-container">
+
+        <div class=movie-card>
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/colombiana.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                    <span>Colombiana</span>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class=movie-card>
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/ip-man.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+
+                    <span> Ip Man 4</span>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class=movie-card>
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/taken-2.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+
+                    <span>Taken 2</span>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
 
 </body>
 

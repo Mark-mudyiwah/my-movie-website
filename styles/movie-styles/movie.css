@@ -1,84 +1,223 @@
 body{
     font-family: roboto;
     padding-bottom: 200px;
+    background-color: white;
+    font-size: medium;
+     
 }
-.movie-poster-container{
-    display: block;
-    width: 100%;
-    margin: 0 auto;
+
+p{
+max-width: 500px;
+}
+
+button{
+    padding-left: 35px;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+.page-nav-container{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+.right-arrow-icon{
+    width: 30px;
+    margin-top: 5px;
+}
+
+.all-movie-info-container{
+    display: flex;
+    align-items:end;
+     gap:12px;
+   border-bottom:1px solid rgb(219, 216, 216);
+    width: fit-content;
+    padding-bottom: 6px;
+}
+
+
+.image-container{
    
-    border-radius: 30px;
-}
+    max-width:350px;
+   
 
-.movie-poster{
-   width: 100%;
-      border-radius: 20px;
-    
 }
-
+.movie-poster-img{
+    width:100%;
+    min-width: 150px;
+    max-width: 350px;
+}
 
 .movie-info{
-    display: block;
-    margin-top: 30px;
-}
-
-.movie-info div{
     display: flex;
-     margin-top: 30px;
-     align-items: start;
+    flex-direction: column;
+    font-size: small;
+    justify-content: space-between;
+    align-items: start;
+    gap: 6px;
+    
+
 }
 
-.title-text{
-font-weight: 800;
-}
-
-.title-name{
-color: brown;
-font-weight: 600;
- margin-left: 10px;
-}
-
-.actor-text{
-    font-weight: 800;
-}
-
-.actor-name{
-    color: blue;
+ .label{
     font-weight: 600;
-     margin-left: 10px;
+ }
+
+.value{
+    color: rgb(78, 2, 2);
+   
 }
 
 
-
-
-
-.rating-text{
-    font-weight: 800;
+.movie-desc{
+    margin-left: 30px;
+    margin-top: 5px;
+    color: rgb(0, 2, 129);
 }
 
-.actual-rating{
-color: red;
-font-weight: 900;
- margin-left: 10px;
-}
-
-
-.description-text{
-    font-weight: 800;
-}
-
-.movie-description{
-    margin-left: 10px;
+.watch-trailer-button,
+.return-button{
+   
+    color: white;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+     
+     
 }
 
 
-.release-date-text{
-font-weight: 800;
+.watch-trailer-button{
+background:linear-gradient( 45deg,aqua, blue,rgb(18, 197, 18));
 }
 
-.release-date{
-color: blue;
-font-weight: 600;
- margin-left: 10px;
+.return-button{
+   background:linear-gradient( 45deg,rgb(0, 0, 0), red,rgb(1, 15, 1));
+}
+
+.watch-icon{
+width: 23px;
+position: absolute;
+left: 5px;
+top:7px;
+
+
+}
+
+.return-icon{
+width: 15px;
+position: absolute;
+left: 15px;
+top:9px;
+
+
+}
+
+.other-related-info{
+ 
+ margin-top: 20px;
+ font-weight: 700;
+ 
+}
+
+.episodes-text{
+    font-weight: 400;
+}
+
+.more-like-this-text{
+    text-decoration: underline;
+}
+
+ 
+
+.similar-movies-container{
+display: grid;
+grid-template-columns:repeat(3,120px);
+gap: 15px;
+margin-top: 15px;
+
+
+}
+.movie-card {
+    border: 1px solid #ccc;
+    width: max-content;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);   /* base shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px) scale(1.03);   /* movement effect */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);   /* stronger shadow */
+}
+
+.movie-image-container {
+    width: 120px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.poster-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;   /* smooth rounded top edges */
+}
+
+
+ .movie-information{
+    margin: 0 auto;
+ }
+
+ @media(max-width:505px){
+    .all-movie-info-container{
+         justify-content: flex-end;
+
+    }
+
+    .image-container{
+   
+    width:350px;
+   
+}
+
+.more-like-this-text{
+    display: flex;
+    justify-content: center;
+}
+
+.watch-trailer-button,
+.return-button{
+   
+    color: white;
+    position: relative;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+     
+     
+}
+.watch-icon{
+display: none;
+
+}
+
+.return-icon{
+ display: none;
+
+
+}
  
 }
