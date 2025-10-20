@@ -137,13 +137,24 @@ top:9px;
     font-size: 20px;
 }
  
+.similar-movies-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;        /* allows horizontal scroll */
+  overflow-y: hidden;
+  scrollbar-width: none;   /* hides scrollbar in Firefox */
+  scroll-behavior: smooth;
+  padding: 10px;
+  margin-top: 15px;
+}
 
-.similar-movies-container{
- 
-    display: flex;
-    justify-content: space-between;
-    
-    margin-top: 15px;
+.similar-movies-container::-webkit-scrollbar {
+  display: none; /* hides scrollbar in Chrome/Safari/Edge */
+}
+
+/* prevent child elements from shrinking */
+.similar-movies-container > * {
+  flex: 0 0 auto;  /* don't let items shrink or stretch */
 }
 
 
@@ -225,3 +236,31 @@ display: none;
 }
  
 }
+
+@media(max-width:1450px){
+  .movie-image-container {
+    height: 300px;
+    display: flex;
+     
+}
+}
+
+
+@media(max-width:1300px){
+  .movie-image-container {
+    height: 280px;
+    display: flex;
+     
+}
+}
+
+
+
+@media(max-width:1200px){
+  .movie-image-container {
+    height: 250px;
+    display: flex;
+     
+}
+}
+    
