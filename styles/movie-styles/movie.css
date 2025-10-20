@@ -36,7 +36,7 @@ button{
     display: flex;
     align-items:end;
      gap:12px;
-   border-bottom:1px solid rgb(219, 216, 216);
+    border-bottom:1px solid rgb(219, 216, 216);
     width: fit-content;
     padding-bottom: 6px;
 }
@@ -264,3 +264,13 @@ display: none;
 }
 }
     
+@media(max-width:400px){
+ .all-movie-info-container{
+ flex-direction: column;
+ align-items: start;
+ }
+
+     
+}
+
+
