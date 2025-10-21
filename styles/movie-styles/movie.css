@@ -2,7 +2,9 @@ body{
     font-family: roboto;
     background-color: white;
     font-size: medium;
-    margin: 0;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 50px;
      
 }
 
@@ -77,7 +79,7 @@ button{
 
 
 .movie-desc{
-  max-width: 100px;
+max-width: 100%;
    color: rgb(0, 89, 255);
 }
 
@@ -193,19 +195,53 @@ top:9px;
 
  .movie-information{
     margin: 0 auto;
+    max-width: 100%;
  }
 
- @media(max-width:505px){
-    .all-movie-info-container{
-         justify-content: flex-end;
 
-    }
-
-    .image-container{
-   
-     width:350px;
-   
+ html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
+
+.all-movie-info-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-container,
+.movie-poster-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+button {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+ @media(max-width:505px){
+ 
+.all-movie-info-container{
+ flex-direction: column;
+ align-items: start;
+ 
+ }
+.image-container{
+ width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.movie-poster-img {
+  width: 100%;
+  height: auto;
+}
+
 
 .more-like-this-text,
 .recommended-for-you-text{
@@ -266,14 +302,7 @@ display: none;
 }
     
 @media(max-width:500px){
- .all-movie-info-container{
- flex-direction: column;
- align-items: start;
- gap: 0;
- }
-.image-container{
- width: 100%;
-}
+
  
      
 }

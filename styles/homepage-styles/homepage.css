@@ -2,6 +2,8 @@
     font-size: 15px;
     margin: 0;
     font-family: roboto;
+    max-width: 100%;
+    padding-top: 100px;
  }
 
 
