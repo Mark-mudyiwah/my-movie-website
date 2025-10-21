@@ -32,11 +32,11 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 4px;
+  gap: 10px;
 }
 
 .info-item{
-  font-size: 14px;
+  font-size: 16px;
 
 }
 .label{
@@ -44,8 +44,8 @@ body{
 }
 
 .movie-desc{
-  color: blue;
-  font-size: small;
+  color: rgb(129, 129, 129);
+  font-size: 15px;
 }
 
 
@@ -62,7 +62,7 @@ font-weight: 500;
 
 .watch-trailer-button,
 .return-button{
-padding: 6px 14px;
+padding: 10px 14px;
 border: none;
 border-radius: 6px;
 color: white;
