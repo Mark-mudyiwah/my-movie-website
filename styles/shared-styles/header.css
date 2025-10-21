@@ -1,7 +1,7 @@
 body{
-    padding-top: 60px;
+    padding-top: 80px;
     max-width: 100%;
-
+    
 }
 
 .header-primary{
@@ -17,7 +17,8 @@ body{
  right: 0;
  left: 0;
  top: 0;
-z-index: 120;
+ z-index: 120;
+ max-width: 100%;
 }
 
 .menu-name-container{

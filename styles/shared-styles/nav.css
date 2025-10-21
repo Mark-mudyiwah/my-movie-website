@@ -9,8 +9,7 @@
    background-color: black;
     color: white;
     position: relative;
- 
-    width: 100%;
+    max-width: 100%;
     
    /*background-image: url('images/header-images/istockphoto-1165399909-612x612.jpg');*/
 }
