@@ -38,7 +38,7 @@ align-items: center;
 
 .search-input-div{
   border: 1px solid black;
-    height: 38px;
+    height: 43px;
     display: flex;
     border-radius: 12px;
     width: 80%;
@@ -68,12 +68,17 @@ align-items: center;
 }
 
 .search-icon{
-    height: 20px;
+    height: 25px;
 }
 
 .menu-icon,
-.movies-icon{
+.movies-icon
+{
   width: 30px;
+}
+
+.account-image{
+    width: 40px;
 }
 .menu-icon{
 display: none;
@@ -176,6 +181,9 @@ display: none;
    
     
    
+}
+.account-image{
+    margin-left: 20px;
 }
 }
 
