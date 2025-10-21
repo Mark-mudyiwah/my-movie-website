@@ -2,17 +2,20 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie</title>
-    <link rel="stylesheet" href="styles/movie-styles/movie.css">
-    <link rel="stylesheet" href="styles/shared-styles/header.css">
-    <link rel="stylesheet" href="styles/shared-styles/nav.css">
+    <title>movie website</title>
 
+    <link rel="stylesheet" href="styles/shared-styles/nav.css">
+    <link rel="stylesheet" href="styles/shared-styles/sidebar.css ">
+    <link rel="stylesheet" href="styles/shared-styles/header.css">
+    <link rel="stylesheet" href="styles/homepage-styles/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        
 </head>
 
 <body>
@@ -20,7 +23,7 @@
     <div class="header-primary">
         <div class="menu-name-container">
             <img class="movies-icon" src="images/icons/movies-icon.png">
-            <img class="menu-icon" src="images/icons/menu-icon-red.png">
+             <img class="menu-icon" src="images/icons/menu-icon-red.png">
             <span class="guteflix-text">
                 GuteFlix Movies
             </span>
@@ -30,100 +33,188 @@
 
     </div>
 
-    <div class="search-input-div">
+    <div class="header-secondary">
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/home-icon.png" alt="home">
+            </span>
+            <span>
+                Home
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/browse-icon.png" alt="browse">
+            </span>
+            <span>
+                Browse
+
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/tv-show-icon.png" alt="tv-show">
+            </span>
+            <span>
+              Tv Shows
+            </span>
+
+        </div>
+        <div>
+             <span>
+                <img class="s-header-icon" src="images/icons/popular-icon.png" alt="popular">
+            </span>
+            <span>
+             Popular
+            </span>
+        </div>
+        <div>
+          <span>
+                <img class="s-header-icon" src="images/icons/top-rated-icon.png" alt="top-rated">
+            </span>
+            <span>
+             Top Rated
+
+            </span>
+        </div>
+    </div>
+
+      <div class="search-input-div">
         <img src="images/icons/search-icon.png" class="search-icon" alt="search">
         <input type="text" class="search-input" placeholder="Type the movie name">
 
-    </div>
+      </div>
 
-    <div class="page-nav-container">
-        <span>
-            Home
-        </span>
-        <span>
-            <img class="right-arrow-icon" src="images/icons/right-arrow.png">
-        </span>
-        <span>
-            Details
-        </span>
+    <div class="sidebar">
+             <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/home-icon.png" alt="home">
+            </span>
+            <span>
+                Home
 
-    </div>
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/browse-icon.png" alt="browse">
+            </span>
+            <span>
+                Browse
 
-
-    <div class="all-movie-info-container">
-        <div class="image-container">
-            <img class="movie-poster-img" src="images/movie-posters/john-wick.jpg">
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/tv-show-icon.png" alt="tv-show">
+            </span>
+            <span>
+              Tv Shows
+            </span>
 
         </div>
+        <div>
+             <span>
+                <img class="s-header-icon" src="images/icons/popular-icon.png" alt="popular">
+            </span>
+            <span>
+             Popular
+            </span>
+        </div>
+        <div>
+          <span>
+                <img class="s-header-icon" src="images/icons/top-rated-icon.png" alt="top-rated">
+            </span>
+            <span>
+             Top Rated
 
-        <div class="movie-info">
-            <div class="info-item">
-                <span class="label">Title:</span>
-                <span class="value">John Wick: Chapter 4</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="featured-text">
+        <span>
+            Featured
+        </span>
+        <span class="see-all-text">
+            See All &gt
+        </span>
+    </div>
+
+    <div class="preview-grid">
+
+        <div class="movie-card">
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/colombiana.jpeg">
             </div>
 
-            <div class="info-item">
-                <span class="label">Actors:</span>
-                <span class="value">Keanu Reeves, Donnie Yen</span>
-            </div>
+            <div class="movie-information">
+                <div class="name-container">
+                    <span>Colombiana</span>
+                </div>
 
-            <div class="info-item">
-                <span class="label">Release:</span>
-                <span class="value">2023</span>
-            </div>
-
-            <div class="info-item">
-
-                <span class="label">Overview:</span>
-                 <span class="movie-desc">
-                    After being betrayed by the High Table,
-                    legendary hitman John Wick uncovers a path to defeating the secretive criminal council once and
-                    for all...see more
-
-
-                 </span>
-            </div>
-            <div class="info-item">
-                <span class="label">Release:</span>
-                <span class="value">March ,2023</span>
-            </div>
-
-            <div class="info-item">
-                <span class="label">Ratings:</span>
-                <span class="value">4.5</span>
-            </div>
-
-
-            <div class="info-item">
-
-                <button class="watch-trailer-button">
-                    <img class="watch-icon" src="images/icons/watch-video-icon.png" alt="Watch">
-                    Watch Trailer</button>
-                <button class="return-button">
-                    <img class="return-icon" src="images/icons/return-icon.png" alt="Watch">
-                    Go Back
-                </button>
-
-
-
-
-
+                
 
             </div>
-
-
-
         </div>
 
+        <div class="movie-card">
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/accident-man.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                   
+                    <span>Accident Man</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <a href="movie.html">
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/john-wick.jpg">
+            </div>
+            </a>
+
+            <div class="movie-information">
+                <div class="name-container">
+                   
+                    <span>John Wick </span>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+          <div class="movie-card">
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/terminal-list.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                    <span>The Terminal List</span>
+                </div>
+
+            </div>
+        </div>
     </div>
- 
-             
 
-    <span class="more-like-this-text">
-        <span>More Like This</span>
-    </span>
+    <div class="featured-text">
+        <span>
+             Trending
+        </span>
+        <span class="see-all-text">
+          See All &gt
+        </span>
+    </div>
 
-    <div class="similar-movies-container">
+    <div class="preview-grid">
 
         <div class="movie-card">
             <div class="movie-image-container">
@@ -132,56 +223,11 @@
 
             <div class="movie-information">
                 <div class="name-container">
+                
                     <span>Taken 2</span>
                 </div>
 
-
-
-            </div>
-        </div>
-
-        <div class="movie-card">
-            <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/avengers.jpeg">
-            </div>
-
-            <div class="movie-information">
-                <div class="name-container">
-
-                    <span>Avengers</span>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="movie-card">
-            <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/braveheart.jpeg">
-            </div>
-
-            <div class="movie-information">
-                <div class="name-container">
-
-                    <span>Brave Heart</span>
-                </div>
-
-
-            </div>
-        </div>
-
-          <div class="movie-card">
-            <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/the-godfather.jpeg">
-            </div>
-
-            <div class="movie-information">
-                <div class="name-container">
-                    <span>The Godfather</span>
-                </div>
-
-
-
+                 
             </div>
         </div>
 
@@ -192,132 +238,116 @@
 
             <div class="movie-information">
                 <div class="name-container">
-
+                  
                     <span> Ip Man 4</span>
                 </div>
 
-
+              
             </div>
         </div>
 
         <div class="movie-card">
             <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/lala-land.jpeg">
+                <img class="poster-image" src="images/movie-posters/fast and furious.jpeg">
             </div>
 
             <div class="movie-information">
                 <div class="name-container">
-
-                    <span>Lalaland</span>
+             
+                    <span>Fast and Furious</span>
                 </div>
 
-
-            </div>
-        </div>
-
-
-    </div>
-
-      <span class="recommended-for-you-text">
-        <span>Recommended for You</span>
-        <span><img src="images/icons/reccomended-icon.png" alt=""></span>
-    </span>   
-
-    <div class="similar-movies-container">
-
-        <div class="movie-card">
-            <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/Joker.jpeg">
-            </div>
-
-            <div class="movie-information">
-                <div class="name-container">
-                    <span>Joker</span>
-                </div>
-
-
-
-            </div>
-        </div>
-
-        <div class="movie-card">
-            <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/ninja-assasin.jpeg">
-            </div>
-
-            <div class="movie-information">
-                <div class="name-container">
-
-                    <span>Ninja Assasin</span>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="movie-card">
-            <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/taken-2.jpeg">
-            </div>
-
-            <div class="movie-information">
-                <div class="name-container">
-
-                    <span>Taken 2</span>
-                </div>
-
-
+                 
             </div>
         </div>
 
         
-        <div class="movie-card">
+        <div class= "movie-card">
             <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/matrix.jpeg">
+                <img class="poster-image" src="images/movie-posters/stranger-things.jpeg">
             </div>
 
             <div class="movie-information">
                 <div class="name-container">
-                    <span>Matrix</span>
+                         <span>Stranger Things</span>
+                </div>
+ 
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="featured-text">
+       <span>
+            Tv Shows
+        </span>
+        <span class="see-all-text">
+            See All &gt
+        </span>
+    </div>
+    <div class="preview-grid">
+
+        <div class="movie-card">
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/wednesday.jpg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                    
+                    <span>Wednesday</span>
                 </div>
 
+              
 
 
             </div>
         </div>
 
+
         <div class="movie-card">
             <div class="movie-image-container">
-                <img class="poster-image" src="images/movie-posters/thor.jpeg">
+                <img class="poster-image" src="images/movie-posters/stranger-things.jpeg">
             </div>
 
             <div class="movie-information">
                 <div class="name-container">
-
-                    <span>Thor</span>
+                         <span>Stranger Things</span>
                 </div>
-
-
+ 
             </div>
         </div>
 
         <div class="movie-card">
+            <div class="movie-image-container">
+                <img class="poster-image" src="images/movie-posters/terminal-list.jpeg">
+            </div>
+
+            <div class="movie-information">
+                <div class="name-container">
+                    <span>The Terminal List</span>
+                </div>
+
+            </div>
+        </div>
+
+           <div class="movie-card">
             <div class="movie-image-container">
                 <img class="poster-image" src="images/movie-posters/taken-2.jpeg">
             </div>
 
             <div class="movie-information">
                 <div class="name-container">
-
+                
                     <span>Taken 2</span>
                 </div>
 
-
+                 
             </div>
         </div>
-
-
     </div>
+
 
      <div   class="footer">
 
@@ -348,10 +378,7 @@
   </p>
 
     </div>
-
-
-
-
+        
 </body>
 
 </html>
