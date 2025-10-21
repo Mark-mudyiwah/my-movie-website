@@ -19,10 +19,14 @@
 }
 
 .preview-grid{
-    display: flex;                 /* use flex for horizontal scroll */
-    gap: 16px;                     /* space between cards */
-    overflow-x: auto;              /* horizontal scroll */
-    scrollbar-width: none;         /* hide scrollbar Firefox */
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  gap: 20px;
 }
 
 .preview-grid::-webkit-scrollbar {
@@ -47,17 +51,12 @@
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);   /* stronger shadow */
 }
 
-.movie-image-container {
-    width: 200px;
-    display: flex;
-    justify-content: stretch;
+.movie-image-container{
+  height:200px;
 }
-
-.poster-image {
-    width: 100%;
-    border-radius: 8px 8px 0 0;   /* smooth rounded top edges */
+.poster-image{
+  height: 100%;
 }
-
 
  .movie-information{
     margin: 0 auto;
@@ -103,7 +102,8 @@
 
 
  .movie-image-container {
-    width: 150px;
+    height: 200px;
+    width: 100%;
 }
 
 
@@ -122,8 +122,32 @@
 
 
  .movie-image-container {
-    width: 120px;
+    height: 200px;
+    width: 100%;
 }
 
 
  }
+
+ @media (min-width :600px){
+ .movie-image-container{
+  height:300px;
+}
+
+}
+
+@media (min-width :1000px){
+ .movie-image-container{
+  height:400px;
+}
+
+}
+
+@media (min-width :1200px){
+ .movie-image-container{
+  height:450px;
+  
+}
+
+
+}
