@@ -1,21 +1,25 @@
- .sidebar{
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    justify-content: space-between;
-    background-color: black;
-    width: 55%;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    padding: 20px 12px;
-    color:white ;
-    font-weight: 500;
-    align-items: start;
-   z-index: 100;
-    display: none;
-     
- }
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: -60%; /* start hidden off-screen */
+  width: 55%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1000;
+  transition: left 0.3s ease; /* smooth slide effect */
+}
+
+/* When sidebar is visible */
+.sidebar.show {
+  left: 0; /* slide in */
+}
 
  .sidebar div{
 
@@ -23,4 +27,8 @@
     flex-direction: column;
     cursor: pointer;
     align-items: center;
+ }
+
+ .show{
+   display:flex;
  }

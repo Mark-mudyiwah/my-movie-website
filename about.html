@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | Guteflix</title>
   <link rel="stylesheet" href="styles/other styles/about.css">
+ <link rel="stylesheet" href="styles/shared-styles/sidebar.css">
   <link rel="stylesheet" href="styles/shared-styles/header.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 
    <div class="header-primary">
         <div class="menu-name-container">
             <img class="movies-icon" src="images/icons/movies-icon.png">
-            <img class="menu-icon" src="images/icons/menu-icon-red.png">
+            <img class="menu-icon js-menu-container" src="images/icons/menu-icon-red.png">
             <span class="guteflix-text">
                 GuteFlix Movies
             </span>
@@ -31,18 +37,58 @@
         <input type="text" class="search-input" placeholder="Type the movie name">
 
       </div>
+      
+       <div class="sidebar js-sidebar">
+             <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/home-icon.png" alt="home">
+            </span>
+            <span>
+                Home
 
-        <div class="page-nav-container">
-        <span>
-            Home
-        </span>
-        <span>
-            <img class="right-arrow-icon" src="images/icons/right-arrow.png">
-        </span>
-        <span>
-         About Us
-        </span>
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/browse-icon.png" alt="browse">
+            </span>
+            <span>
+                Browse
 
+            </span>
+        </div>
+        <div>
+            <span>
+                <img class="s-header-icon" src="images/icons/tv-show-icon.png" alt="tv-show">
+            </span>
+            <span>
+              Tv Shows
+            </span>
+
+        </div>
+        <div>
+             <span>
+                <img class="s-header-icon" src="images/icons/popular-icon.png" alt="popular">
+            </span>
+            <span>
+             Popular
+            </span>
+        </div>
+        <div>
+          <span>
+                <img class="s-header-icon" src="images/icons/top-rated-icon.png" alt="top-rated">
+            </span>
+            <span>
+             Top Rated
+
+            </span>
+        </div>
+    </div>
+        <div class="page-title">
+        <span>
+          About Us
+        </span>
+         
     </div>
   
 
@@ -96,7 +142,7 @@
 
       <p class="follow">
         Follow us on 
-        <a href="https://www.facebook.com/yourpagename" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/mark.mudyiwa.2004yew/" target="_blank">Facebook</a>
         for updates, upcoming features, and movie recommendations!
       </p>
     </div>
@@ -107,6 +153,8 @@
   <footer class="footer">
     <p>© 2025 Guteflix. Built with ❤️ for learning, creativity, and fun.</p>
   </footer>
+
+   <script src="scripts/functionality.js"></script>
 
 </body>
 </html>
