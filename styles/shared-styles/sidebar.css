@@ -1,9 +1,9 @@
 .sidebar {
   position: fixed;
-  top: 60px;
-  left: -60%; /* start hidden off-screen */
-  width: 55%;
-  height: 80%;
+  top: 50px;
+  left: -80%; /* start hidden off-screen */
+  width: 75%;
+  height: 90%;
   background-color: black;
   color: white;
   font-weight: 500;
