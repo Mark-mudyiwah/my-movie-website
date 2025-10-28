@@ -4,6 +4,10 @@
     font-family: roboto;
     max-width: 100%;
     padding-top: 100px;
+    
+
+      background-color: #121212; /* smooth dark charcoal */
+  color: #f5f5f5;
  }
 
 
@@ -52,24 +56,42 @@
 }
 
 .movie-image-container{
-  height:200px;
+  width:200px;
 }
 .poster-image{
-  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  border-top-right-radius:6px ;
+  border-top-left-radius: 6px;
 }
 
  .movie-information{
     margin: 0 auto;
  }
 
+.name-container {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 8px; 
+  box-sizing: border-box;
+  color: rgb(19, 220, 235);
+  font-size: 12px;
+  font-weight: 800;
+}
 
-
- .name-text,
+  
  .released-text,
  .actor-text{
     font-weight:700;
     color: darkblue;
  }
+
+
 
  .see-all-text{
     font-weight: 500;
@@ -101,10 +123,7 @@
 
 
 
- .movie-image-container {
-    height: 200px;
-    width: 100%;
-}
+  
 
 
  }
@@ -115,15 +134,10 @@
     font-size: 16px;
   }
 
-  
- 
-
-
-
 
  .movie-image-container {
-    height: 200px;
-    width: 100%;
+  
+  width: 200px;
 }
 
 
@@ -131,21 +145,24 @@
 
  @media (min-width :600px){
  .movie-image-container{
-  height:300px;
+  width:300px;
 }
 
+.name-text{
+  font-size: 15px;
+}
 }
 
 @media (min-width :1000px){
  .movie-image-container{
-  height:400px;
+  width:400px;
 }
 
 }
 
 @media (min-width :1200px){
  .movie-image-container{
-  height:450px;
+  width:450px;
   
 }
 

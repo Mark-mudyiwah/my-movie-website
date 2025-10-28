@@ -6,7 +6,7 @@ body{
 }
 
 .header-primary{
-    background-color: black;
+  
  /*background:linear-gradient( 45deg,aqua,black, blue,rgb(18, 197, 18));*/
  height: 40px;
  display: flex;
@@ -20,6 +20,10 @@ body{
  top: 0;
  z-index: 120;
  max-width: 100%;
+
+  background: #1f1b24; /* deep purple-gray */
+  border-bottom: 2px solid #e50914;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu-name-container{
@@ -95,6 +99,18 @@ display: none;
     font-weight: 800;
     font-size: 17px;
     
+}
+
+
+.page-nav-container{
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  gap: 5px;
+}
+.right-arrow-icon{
+  width: 45px;
+  padding-top: 5px;
 }
 
 .header-secondary span{

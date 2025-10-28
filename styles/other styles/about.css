@@ -1,0 +1,88 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px 20px;
+  background: #111;
+  border-bottom: 2px solid crimson;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.header span {
+  color: crimson;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 80px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+.about-text h2 {
+  color: crimson;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #ddd;
+  text-align: justify;
+}
+
+.about-text strong {
+  color: #fff;
+}
+
+.about-text a {
+  color: crimson;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+.about-image {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-image img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(220, 20, 60, 0.4);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 2px solid crimson;
+}
